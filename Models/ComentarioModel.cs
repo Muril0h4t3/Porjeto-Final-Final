@@ -9,10 +9,10 @@ namespace Senai.Projeto.Final.Final.web.Mvc.Models
         public DateTime DataCriacao { get; set; }
         public UsuarioModel Usuario { get; set; }
 
-        public ComentarioModel(int Id, string Comentario, DateTime DataCriacao, UsuarioModel Usuario){
-            this.Id = id;
+        public ComentarioModel(int idComentarios, string comentario, DateTime dataCriacao, UsuarioModel usuario){
+            this.Id = idComentarios;
             this.Comentario = comentario;
-            this.DataCriacao = dataCriacao;
+            this.DataCriacao = dataCriacao; 
             this.Usuario = usuario;
         }
     }
