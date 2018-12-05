@@ -25,10 +25,7 @@ namespace Senai.Projeto.Final.Final.web.Mvc
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseMvc(rota => rota.MapRoute(name:"default", template:"{controller=Usuario}/{action=Cadastrar}"));
         }
     }
 }
